@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background: linear-gradient(180deg, #333333 0%, #090707 11.98%) no-repeat;
+    font-size: 16px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Header */
+header{
+    margin-top: 19px;
+    margin-bottom: 112px;
+}
+.nav-bar,.nav-list,.nav-list > ul{
+    display: flex;
+    align-items: center;
+}
+.nav-bar{
+   justify-content: space-between;
+}
+.nav-list{
+    gap: 46px;
+}
+.nav-list > ul {
+    gap: 27px;
+}
+.nav-list > button, .list-btn>button:nth-child(2){
+    background-color: transparent;
+    padding: 16px 50px;
+    border: 1.5px solid #FFFFFF;
+    border-radius: 5px;
+}
+/* Header */
+ 
+/* Intro */
+.introduction{
+    max-width: 914px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 54px;
+}
+.introduction h2{
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 78px;
+    margin-bottom: 42px;
+}
+.introduction h2 span{
+    color: #3775ED;
+}
+.introduction p{
+    color: #E5E5E5;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26.4px;
+    margin-bottom: 56px;
+}
+.introduction .list-btn > button:nth-child(1),.denvelops >.btn-feature> button{
+    background-color: #3775ED;
+    border-radius: 5px;
+    padding: 16px 50px;
+    margin-right: 23px;
+}
+/* Intro */
+
+/* Banner */
+.banner{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 172px;
+}
+.banner img{
+    width: 100%;
+}
+/* Banner */
+
+/* Ideas */
+.ideas{
+    text-align: center;
+   
+}
+.ideas h3{
+    color: #E5E5E5;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 19px;
+}
+.ideas>p{
+    font-size: 22px;
+    margin-bottom: 80px;
+}
+.ideas .service{
+    display: flex;
+    gap:23px;
+    margin-bottom: 83px;
+}
+.service .card {
+    background-color: #C96408;
+    border-radius: 5px;
+    text-align: center;
+    padding: 40px 25px;
+    flex: 1;
+}
+.card img{
+    margin-bottom: 24px;
+}
+.card h4{
+    font-size: 24px;
+    margin-bottom: 14px;
+}
+ .ideas>.card p {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+}
+.ideas .ideas-banner{
+    background-image: url("../img/Ideas-banner.png");
+    height: 347px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 31px;
+}
+hr{
+    border:1.5px solid #282828;
+    margin-bottom: 30px;
+}
+/* Ideas */
+
+/* Denvelops */
+.denvelops{
+
+}
+.denvelops > h4 {
+    font-weight: 700px;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 20px;
+}
+.denvelops > p{
+    font-weight: 400px;
+    font-size: 22px;
+    line-height: 31px;
+    margin-bottom:77px;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 60px;
+}
+.grid .grid-item{
+    width: 23.5%;
+    position: relative;
+}
+.grid-item > .avatar{
+    width: 100%;
+    height: auto;
+}
+.grid-item .infor{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 9px 20px 14px;
+    background: rgba(9, 7, 7, 0.4);
+backdrop-filter: blur(12.5px);
+    width: 100%;
+}
+.infor > h4{
+    font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+margin-bottom: 9px;
+}
+.infor >p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.infor >p >span{
+    font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+}
+.grid-item > .chat{
+    position: absolute;
+    right: 19px;
+    bottom: 16px;
+}
+/* Denvelops */ 
+/* Chia theo grid */
+/* .grid1{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  row-gap: 24px;
+  column-gap: 24px;
+  grid-auto-rows: minmax(100px, auto);
+} */
+
+.denvelops > .btn-feature{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: 360px) {
+    body{
+        background-color:#090707;;
+    }
+    .nav-bar{
+
+    }
+    .nav-bar .nav-list{
+        display: none;
+    }
+    .nav-bar img{
+        width: 60%;
+        margin-bottom: 64px;
+    }
+    .introduction h2{
+        font-size: 35px;
+        font-weight: 500px;
+    }
+    .introduction >p {
+        
+        font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+    }
+    .list-btn{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap:10px
+    }
+    .list-btn > button{
+        width: 90%;
+        margin: 0 !important;
+    }
+    .ideas > .service{
+        flex-direction:column;
+        gap:10px;
+    }
+    .ideas > .service> .card {
+        margin: 10px 10px;
+    }
+    .ideas .ideas-banner{
+    background-image: url("../img/newbanner.png");
+    }
+    .grid{
+    flex-direction: column;
+}
+.grid .grid-item{
+    width: 100%};
+
+}
